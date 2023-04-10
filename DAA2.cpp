@@ -124,18 +124,18 @@ int main(){
     prim(adj);
     cout<<endl;
 
-    // cout<<"---- MST using Kruskals ----\n";
-    // cout<<"Enter no. of vertices and edges: ";
-    // int n, m;
-    // cin >> n >> m;
-    // cout<<"Enter edges: \n";
-    // for (int i = 0; i < m; i++) {
-    //     int u, v, w;
-    //     cin >> u >> v >> w;
-    //     edges[i] = {u, v, w};
-    // }
-    // kruskal(n, m);
-    // cout<<endl;
+    cout<<"---- MST using Kruskals ----\n";
+    cout<<"Enter no. of vertices and edges: ";
+    int n, m;
+    cin >> n >> m;
+    cout<<"Enter edges: \n";
+    for (int i = 0; i < m; i++) {
+        int u, v, w;
+        cin >> u >> v >> w;
+        edges[i] = {u, v, w};
+    }
+    kruskal(n, m);
+    cout<<endl;
 
     return 0;
 }
