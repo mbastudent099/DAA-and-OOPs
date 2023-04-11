@@ -4,18 +4,18 @@ using namespace std;
 
 class Matrix {
     private:
-        int **arr;   // Pointer to 2D array
+        int **arr;   
         int rows, cols;
 
     public:
-        // Default constructor
+       
         Matrix() {
             rows = 0;
             cols = 0;
             arr = NULL;
         }
 
-        // Constructor with two arguments (to initialize rows and columns of matrix)
+       
         Matrix(int r, int c) {
             rows = r;
             cols = c;
@@ -25,7 +25,7 @@ class Matrix {
             }
         }
 
-        // Function to take input of matrix elements from user
+       
         void input() {
             cout << "Enter matrix elements:" << endl;
             for (int i = 0; i < rows; i++) {
@@ -35,7 +35,7 @@ class Matrix {
             }
         }
 
-        // Function to display matrix elements
+        
         void display() {
             cout << "Matrix:" << endl;
             for (int i = 0; i < rows; i++) {
@@ -46,9 +46,9 @@ class Matrix {
             }
         }
 
-        // Function to multiply two matrices
+       
         Matrix multiply(Matrix m) {
-            Matrix temp(rows, m.cols);   // Create new matrix to store result
+            Matrix temp(rows, m.cols);   
             int sum;
 
             for (int i = 0; i < rows; i++) {
@@ -79,18 +79,18 @@ int main() {
         return 0;
     }
 
-    Matrix m1(r1, c1);   // Create matrix with entered rows and columns
-    Matrix m2(r2, c2);   // Create matrix with entered rows and columns
-    Matrix m3;           // Create empty matrix
+    Matrix m1(r1, c1);   
+    Matrix m2(r2, c2);   
+    Matrix m3;           
 
-    m1.input();   // Take input of matrix elements from user
-    m2.input();   // Take input of matrix elements from user
+    m1.input();   
+    m2.input();   
 
-    m3 = m1.multiply(m2);   // Multiply m1 and m2 and store result in m3
+    m3 = m1.multiply(m2);  
 
-    m1.display();   // Display m1
-    m2.display();   // Display m2
-    m3.display();   // Display m3
+    m1.display();   
+    m2.display();   
+    m3.display();   
 
     return 0;
 }
