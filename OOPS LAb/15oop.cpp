@@ -16,8 +16,8 @@ public:
 
 int main() {
     MyClass obj(10);
-    print_x(obj); // Output: x = 10
+    print_x(obj); 
     set_x(obj, 20);
-    print_x(obj); // Output: x = 20
+    print_x(obj); 
     return 0;
 }
